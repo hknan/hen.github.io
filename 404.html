@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>404 · 页面未找到</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="static/hen_yt/css/global.css">
+		<style>
+			.error-main-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 100vh;
+			}
+			.error-wrapper {
+				max-width: 600px;
+				width: 100%;
+				background: #ffffff;
+				border-radius: 40px;
+				padding: 48px 36px 40px;
+				text-align: center;
+				box-shadow: 0 12px 40px rgba(0, 20, 40, 0.08);
+				border: 1px solid rgba(0, 0, 0, 0.02);
+				transition: 0.2s;
+			}
+
+			.error-wrapper:hover {
+				box-shadow: 0 20px 56px rgba(0, 20, 40, 0.10);
+				border-color: #d3e2f2;
+			}
+
+			.error-icon {
+				font-size: 80px;
+				color: #1d3b5c;
+				margin-bottom: 16px;
+				display: block;
+				line-height: 1;
+			}
+
+			.error-icon i {
+				background: linear-gradient(145deg, #2b5f8a, #1d3b5c);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.error-title {
+				font-size: 28px;
+				font-weight: 700;
+				color: #0b1e36;
+				margin-bottom: 8px;
+			}
+
+			.error-sub {
+				font-size: 16px;
+				color: #4f6b8a;
+				margin-bottom: 28px;
+				line-height: 1.6;
+			}
+
+			.error-divider {
+				width: 60px;
+				height: 3px;
+				background: #d9e2ef;
+				border-radius: 4px;
+				margin: 0 auto 28px auto;
+			}
+
+			.error-actions {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 12px;
+				justify-content: center;
+			}
+
+			.btn-primary {
+				background: #1d3b5c;
+				color: #fff;
+				border: none;
+				padding: 12px 32px;
+				border-radius: 40px;
+				font-weight: 550;
+				font-size: 16px;
+				cursor: pointer;
+				transition: 0.15s ease;
+				text-decoration: none;
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+				box-shadow: 0 4px 12px rgba(29, 59, 92, 0.15);
+			}
+
+			.btn-primary:hover {
+				background: #12304b;
+				transform: scale(0.97);
+				box-shadow: 0 6px 18px rgba(29, 59, 92, 0.20);
+			}
+
+			.btn-secondary {
+				background: #f0f5fd;
+				color: #1d3b5c;
+				border: 1px solid #d9e2ef;
+				padding: 12px 28px;
+				border-radius: 40px;
+				font-weight: 500;
+				font-size: 16px;
+				cursor: pointer;
+				transition: 0.15s ease;
+				text-decoration: none;
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+			}
+
+			.btn-secondary:hover {
+				background: #e3edfc;
+				border-color: #b6cde0;
+				transform: scale(0.97);
+			}
+
+			.error-footer-links {
+				margin-top: 32px;
+				font-size: 14px;
+				color: #8aa3c0;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 20px;
+			}
+
+			.error-footer-links a {
+				color: #5e7d9e;
+				text-decoration: none;
+				transition: 0.12s;
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+			}
+
+			.error-footer-links a:hover {
+				color: #1d3b5c;
+				text-decoration: underline;
+			}
+
+			@media (max-width: 780px) {
+				.error-wrapper {
+					padding: 32px 20px 28px;
+					border-radius: 28px;
+				}
+
+				.error-icon {
+					font-size: 56px;
+				}
+
+				.error-title {
+					font-size: 22px;
+				}
+
+				.error-sub {
+					font-size: 14px;
+				}
+
+				.btn-primary,
+				.btn-secondary {
+					font-size: 14px;
+					padding: 10px 24px;
+					width: 100%;
+					justify-content: center;
+				}
+
+				.error-actions {
+					flex-direction: column;
+					align-items: stretch;
+				}
+
+				.error-footer-links {
+					flex-direction: column;
+					gap: 8px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.error-wrapper {
+					padding: 24px 16px 20px;
+				}
+
+				.error-icon {
+					font-size: 44px;
+				}
+
+				.error-title {
+					font-size: 19px;
+				}
+
+				.error-sub {
+					font-size: 13px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-nav-wrapper">
+		    <header class="top-nav">
+		        <div class="nav-left">
+		            <div class="nav-brand">
+		                <i class="fas fa-store"></i> 恒阅发卡
+		            </div>
+		                    </div>
+		        <nav class="nav-menu">
+		            <a href="/"><i class="fas fa-home"></i> 首页</a>
+		            <a href="/id.html"><i class="fas fa-globe"></i> 海内外账号</a>
+		            <a href="/query.html"><i class="fas fa-search"></i> 社工查询</a>
+		            <a href="/sms.html"><i class="fas fa-sms"></i> 短信接码</a>
+		            <a href="/sim.html" class="active-menu"><i class="fas fa-sim-card"></i> 手机卡实体卡</a>
+		            <!--<a href="#"><i class="fas fa-phone-alt"></i> 联系客服</a>-->
+		        </nav>
+		    </header>
+		</div>
+		<div class="error-main-wrapper">
+			<div class="error-wrapper">
+				<span class="error-icon">
+					<i class="fas fa-map-signs"></i>
+				</span>
+
+				<h1 class="error-title">404 · 页面走丢了</h1>
+				<p class="error-sub">
+					很抱歉，您访问的页面可能已被移动、删除或暂时不可用。<br>
+					不妨返回首页，或联系客服寻求帮助。
+				</p>
+
+				<div class="error-divider"></div>
+
+				<!-- 操作按钮 -->
+				<div class="error-actions">
+					<a href="/" class="btn-primary" id="goHomeBtn">
+						<i class="fas fa-home"></i> 返回首页
+					</a>
+					<a href="/" class="btn-secondary" id="contactBtn">
+						<i class="fas fa-headset"></i> 联系客服
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+		    <footer class="site-footer">
+		        <div class="footer-copy">&copy; 2026 hen.yt 版权所有</div>
+		        <div class="footer-links">
+		            <a href="/#联系我们"><i class="fas fa-envelope"></i> 联系我们</a>
+		            <a href="/#关于我们"><i class="fas fa-info-circle"></i> 关于我们</a>
+		            <a href="/#服务条款"><i class="fas fa-file-contract"></i> 服务条款</a>
+		        </div>
+		    </footer>
+		</div>
+	</body>
+</html>
