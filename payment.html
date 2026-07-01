@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<title>恒阅发卡订单在线支付</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/hen_yt/css/global.css?v=1782877478">
+</head>
+<body>
+<div class="top-nav-wrapper">
+    <header class="top-nav">
+        <div class="nav-left">
+            <div class="nav-brand">
+                <i class="fas fa-store"></i> 恒阅发卡
+            </div>
+                    </div>
+        <nav class="nav-menu">
+            <a href="/"><i class="fas fa-home"></i> 首页</a>
+            <a href="/id.html"><i class="fas fa-globe"></i> 海内外账号</a>
+            <a href="/query.html"><i class="fas fa-search"></i> 社工查询</a>
+            <a href="/sms.html"><i class="fas fa-sms"></i> 短信接码</a>
+            <a href="/sim.html"><i class="fas fa-sim-card"></i> 手机卡实体卡</a>
+            <!--<a href="#"><i class="fas fa-phone-alt"></i> 联系客服</a>-->
+        </nav>
+    </header>
+</div>
+
+<div class="payment-container">
+    <div class="payment-wrapper">
+        <div class="payment-left-panel">
+            <div class="payment-header-mobile">
+                <h1>订单支付</h1>
+            </div>
+            <div class="payment-card">
+                <div class="payment-card-title">订单号</div>
+                <span class="payment-order-value" id="orderNumber">--</span>
+            </div>
+
+            <div class="timer-section" id="timerSection">
+                <div class="timer-left">
+                    <span>剩余时间</span>
+                </div>
+                <span class="timer-display" id="timerDisplay">15:00</span>
+            </div>
+
+            <div class="payment-card">
+                <div class="payment-card-title">支付金额</div>
+                <div class="payment-amount-row">
+                    <span class="payment-amount-number" id="amountNumber">0.00</span>
+                    <span class="payment-amount-currency" id="currencySymbol">USDT</span>
+                </div>
+            </div>
+
+            <div class="payment-card">
+                <div class="payment-selector-label">
+                    <span>选择网络</span>
+                </div>
+                <div class="payment-selector-grid" id="networkGrid"></div>
+            </div>
+        </div>
+
+        <div class="payment-right-panel">
+            <div class="payment-card">
+                <div class="payment-address-label">
+                    充值地址
+                    <span class="tag" id="addressNetworkTag">TRC20</span>
+                </div>
+                <div class="payment-address-box" id="addressBox">
+                    <span class="payment-address-text" id="addressText"></span>
+                    <button class="payment-copy-btn-text" id="copyButton"><i class="far fa-copy"></i> 复制地址</button>
+                </div>
+                <div class="payment-network-hint">
+                    <span id="networkHint">仅支持 TRC20-USDT 转账</span>
+                </div>
+            </div>
+
+            <div class="payment-card qr-wrapper">
+                <div id="qrcode"></div>
+                <div class="payment-qr-label">
+                    扫码支付
+                </div>
+                <div class="payment-qr-network-tag" id="qrNetworkTag">TRC20-USDT</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrapper">
+    <footer class="site-footer">
+        <div class="footer-copy">&copy; 2026 hen.yt 版权所有</div>
+        <div class="footer-links">
+            <a href="/#联系我们"><i class="fas fa-envelope"></i> 联系我们</a>
+            <a href="/#关于我们"><i class="fas fa-info-circle"></i> 关于我们</a>
+            <a href="/#服务条款"><i class="fas fa-file-contract"></i> 服务条款</a>
+        </div>
+    </footer>
+</div>
+
+<div class="mobile-bottom-nav" id="mobileBottomNav">
+    <div class="mobile-bottom-nav-list">
+        <a href="/" class="mobile-bottom-nav-item">
+            <div class="mobile-bottom-nav-icon">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="mobile-bottom-nav-text">首页</div>
+        </a>
+        <a href="/id.html" class="mobile-bottom-nav-item">
+            <div class="mobile-bottom-nav-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="mobile-bottom-nav-text">账号购买</div>
+        </a>
+        <a href="/sms.html" class="mobile-bottom-nav-item">
+            <div class="mobile-bottom-nav-icon">
+                <i class="fas fa-sms"></i>
+            </div>
+            <div class="mobile-bottom-nav-text">短信接码</div>
+        </a>
+        <div class="mobile-bottom-nav-item more-btn" id="mobileMoreBtn">
+            <div class="mobile-bottom-nav-icon">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="mobile-bottom-nav-text">更多服务</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/static/hen_yt/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/static/hen_yt/js/qr-code-styling.js"></script>
+
+
+<script type="text/javascript" src="/static/hen_yt/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/hen_yt/js/global.js?v=1782877478"></script>
+
+
+</body>
+</html>
